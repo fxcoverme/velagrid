@@ -24,8 +24,9 @@
   /* ---------- Header ---------- */
   header{position:sticky;top:0;z-index:50;background:rgba(10,32,60,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(227,168,43,.25)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-  .wordmark{font-size:21px;font-weight:800;letter-spacing:.2px;color:#fff}
-  .wordmark span{color:var(--gold)}
+  .wordmark{display:flex;align-items:center;gap:11px;font-size:21px;font-weight:800;letter-spacing:.2px;color:#fff}
+  .wordmark .brandmark{width:44px;height:44px;border-radius:11px;object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,.3);flex:none}
+  .wordmark .wm-name>span{color:var(--gold)}
   .wordmark small{display:block;font-size:10.5px;font-weight:600;letter-spacing:2.6px;color:rgba(255,248,236,.65);text-transform:uppercase;line-height:1.2}
   .nav-links{display:flex;gap:26px;font-size:14.5px;font-weight:600;color:rgba(255,248,236,.85)}
   .nav-links a:hover{color:var(--gold-soft)}
@@ -172,7 +173,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="wordmark" href="#top">Vela<span>Grid</span><small>Technologies</small></a>
+    <a class="wordmark" href="#top"><img class="brandmark" src="assets/fivestarsboost-logo.png" alt="FiveStarsBoost logo"><span class="wm-name">Vela<span>Grid</span><small>Technologies</small></span></a>
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
